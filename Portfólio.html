@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f0f0f;
+        color: #ffffff;
+        line-height: 1.6;
+    }
+    header {
+        background: #121212;
+        padding: 2rem;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        color: #00bfff;
+    }
+    header p {
+        color: #aaa;
+        margin-top: 0.5rem;
+    }
+    section {
+        padding: 4rem 2rem;
+        max-width: 1000px;
+        margin: auto;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #00bfff;
+        padding-left: 1rem;
+    }
+    .projetos {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+        background: #1a1a1a;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0,3);
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card h3 {
+        margin-bottom: 0.5rem;
+    }
+    .card p {
+        font-size: 0.95rem;
+        color: #ccc;
+    }
+    .card a {
+        display: inline-block;
+        margin-top: 1rem;
+        color: #00bfff;
+        text-decoration: none;
+    }
+    .contato a {
+        display: inline-block;
+        margin: 0.5rem 1rem 0 0;
+        color: #00bfff;
+        text-decoration: none;
+    }
+    .formacao {
+        padding: 4rem 2rem;
+        max-width: 1000px;
+        margin: auto;
+    }
+    ul {
+        list-style: disc;
+        margin-left: 2rem;
+        color: #dddddd;
+    }
+    .foto-perfil {
+        margin-top: 20px;
+        width: 150px;
+        height: auto;
+        border-radius: 20%;
+        object-fit: cover;
+        border: 4px solid #00bfff;
+    }
+    footer {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luiz Henrique</h1>
+        <p>Estudante de Ciência da Computação</p>
+        <img src="fotominha.jpg" alt="Foto" class="foto-perfil">
+    </header>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é Luiz Henrique e sou estudante de Ciência da Computação no primeiro semestre, buscando minha oportunidade como estagiário. Estou aprendendo HTML, CSS, JavaScript e Desenvolvimento Web. Gosto de resolver problemas e criar coisas utéis com codigo e estou animado para aprender mais sobre programação e desenvolvimento de software.</p>
+    </section>
+    <section id="formacao">
+        <h2>Formação</h2>
+        <ul>
+            <li>UNIP - Bacharelado em Ciência da Computação (2025-2029, em andamento)</li>
+            <li>Escola Estadual Deputado Benedito Matarazzo - Ensino Médio (2022-2024)</li>
+        </ul>
+    </section>
+    <section id="conhecimentos">
+        <h2>Conhecimentos</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos">
+            <div class="card">
+                <h3>Calculadora Simples</h3>
+                <p>Uma Calculadora Simples desenvolvida com HTML, CSS e JavaScript capaz de realizar operações básicas</p>
+                <p><a href="https://luizhenrique1304.github.io/CalculadoraHTML-CSS-JAVASCRIPT/" target="_blank">Ver no GitHub</a></p>
+            </div>
+            <div class="card">
+                <h3>Pagina de Login com Fundo Animado</h3>
+                <p>Uma Página de Login com fundo animado desenvolvido com HTML e CSS</p>
+                <p><a href="https://luizhenrique1304.github.io/Pagina-de-Login-com-Fundo-Animado/" target="_blank">Ver no GitHub</a></p>
+            </div>
+            <div class="card">
+                <h3>Landing Page de um Produto Ficticio</h3>
+                <p>Uma Landing Page ficticia desenvolvida em HTML e CSS</p>
+                <p><a href="https://luizhenrique1304.github.io/Landing-Page-de-um-Produto-Ficticio/" target="_blank">Ver no GitHub</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="contato">
+            <a href="https://github.com/LuizHenrique1304" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/luiz-henrique-brito-de-oliveira-8b0b01344/" target="_blank">LinkedIn</a>
+            <a href="mailto:luizhenriquebritodeoliveira02@gmail.com" target="_blank">Email</a>
+            <a href="https://www.instagram.com/luizhenrique13_/" target="_blank">Instagram</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Luiz Henrique Brito de Oliveira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
